@@ -1,36 +1,70 @@
 
 .home-background {
-    background-image: url(../Assests/images/image.jpg);  
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
- .container{
-    margin-top: 10rem;
- }
+  background-image: url(../Assests/images/backgroundImg.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  position: relative; 
+}
 
- .card {
-    background: rgba(255, 255, 255, 0.2); 
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    backdrop-filter: blur(10px); 
-    border: 1px solid rgba(255, 255, 255, 0.3); 
-  }
+.bgtext {
+  position: absolute;
+  right: 130px; 
+  top: 40%;
+  transform: translateY(-50%); 
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 25px;
+  text-align: center;
+  color: #a13c01;
+  max-width: 550px;
+  transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease,
+  transform 0.3s ease;
+  transform: scale(1);
   
-  .card-body {
-    color: #fff;  
-  }
-  
-  .form-control {
-    background: rgba(255, 255, 255, 0.5);  
-    border: 1px solid rgba(255, 255, 255, 0.3);  
-    color: #000;  
-  }
-  
-  .form-control::placeholder {
-    color: rgba(0, 0, 0, 0.5);  
-  }
+}
+
+.bgtext:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+}
+
+.bgtext h1 {
+  font-size:3rem;
+  margin-bottom: 10px;
+  font-family:serif;
+}
+
+.bgtext button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9a6b;  
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 20px;
+}
+
+.bgtext button:hover {
+  background-color: #fa7f1b;
+  transform: scale(1.05);
+}
+
+.bgtext button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.bgtext a{
+  text-decoration: none;
+  color: white;
+}
